@@ -43,7 +43,7 @@ install_requirement_txt(){
 print_message "installing requirements"
 pip install -r ./resources/requirements.txt
 # pip install -r ./requirements.txt
-# sleep 60
+sleep 60
 }
 
 switch_to_virtual_env(){
