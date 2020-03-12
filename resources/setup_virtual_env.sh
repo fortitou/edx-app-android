@@ -22,7 +22,6 @@ virtual_env_dir="./virtual_env"
 if [ -d "$virtual_env_dir" ]
 then
 switch_to_virtual_env
-install_requirement_txt
 else
 create_virtual_environment
 switch_to_virtual_env

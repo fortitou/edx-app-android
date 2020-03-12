@@ -32,7 +32,7 @@ AUT_NAME = APK_PATH + 'edx-debuggable-2.20.2.apk'
 PACKAGE_NAME = TEST_PROJECT_REPO_NAME + '/test_bundle.zip'
 
 aut = glob.glob(AUT_NAME)
-print(aut)
+print("----- "+aut)
 
 print('Application Under Test - {}, Test Package - {} - configs {}'.format(
         AUT_NAME,
