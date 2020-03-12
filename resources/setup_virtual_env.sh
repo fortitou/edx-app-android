@@ -22,6 +22,7 @@ virtual_env_dir="./virtual_env"
 if [ -d "$virtual_env_dir" ]
 then
 switch_to_virtual_env
+install_requirement_txt
 else
 create_virtual_environment
 switch_to_virtual_env
@@ -42,9 +43,6 @@ virtualenv -p /usr/bin/python3.6 ./virtual_env
 install_requirement_txt(){
 print_message "installing requirements"
 pip install -r ./resources/requirements.txt
-process_id=$!
-echo "waiting for reqiurements to install - $process_id" 
-wait $process_id
 # pip install -r ./requirements.txt
 # sleep 60
 }
